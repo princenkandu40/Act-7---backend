@@ -34,6 +34,14 @@ app.get("/", (req, res) => {
             </p>
 
             <h2>API Links</h2>
+
+            <p>
+                <strong>Live API Base URL:</strong>
+                <a href="https://backend-37cb.onrender.com/">
+                    https://backend-37cb.onrender.com/
+                </a>
+            </p>
+
             <ul>
                 <li><a href="/health">Health Check</a></li>
                 <li><a href="/api/records">All Records</a></li>
