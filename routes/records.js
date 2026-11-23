@@ -89,8 +89,8 @@ router.get("/:id", (req, res, next) => {
         const id = getValidId(req.params.id);
 
         if (id === null) {
-            return res.status(404).json({
-                message: "Record not found."
+            return res.status(400).json({
+                message: "Invalid record ID."
             });
         }
 
@@ -145,8 +145,8 @@ router.put("/:id", (req, res, next) => {
         const id = getValidId(req.params.id);
 
         if (id === null) {
-            return res.status(404).json({
-                message: "Record not found."
+            return res.status(400).json({
+                message: "Invalid record ID."
             });
         }
 
@@ -196,8 +196,8 @@ router.delete("/:id", (req, res, next) => {
         const id = getValidId(req.params.id);
 
         if (id === null) {
-            return res.status(404).json({
-                message: "Record not found."
+            return res.status(400).json({
+                message: "Invalid record ID."
             });
         }
 
